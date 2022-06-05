@@ -24,9 +24,9 @@ namespace ConsoleApp6
 
             foreach(var x in q)
             {
-                x?.Descendants("Order").Select(x => x.Element("CompanyName"));
+                x?.Descendants("Order").Select(x => x);
 
-                Console.WriteLine(x);
+                Console.WriteLine(x.Descendants("CompanyName"));
             }
             
 
